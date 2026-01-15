@@ -1,0 +1,54 @@
+.form-page {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+}
+
+.form-card {
+  background: white;
+  padding: 40px;
+  width: 420px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  text-align: center;
+}
+
+/* Center inputs inside card */
+.form-card input,
+.form-card textarea {
+  width: 85%;              /* ⬅️ not full width */
+  display: block;
+  margin: 12px auto;       /* ⬅️ centers horizontally */
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  resize: none;
+}
+
+.form-card input:focus,
+.form-card textarea:focus {
+  outline: none;
+  border-color: #667eea;
+}
+
+/* Button also centered */
+.form-card button {
+  width: 85%;
+  display: block;
+  margin: 15px auto 0 auto;   /* ⬅️ center button */
+  padding: 12px;
+  background: #667eea;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.form-card button:hover {
+  background: #5648c8;
+}

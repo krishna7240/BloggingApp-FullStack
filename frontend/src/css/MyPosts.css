@@ -1,0 +1,176 @@
+body {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+  background: #f2f3f7;
+}
+
+/* ===== NAVBAR ===== */
+.nav {
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: white;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav h2 {
+  margin: 0;
+  font-size: 22px;
+}
+
+.back-btn {
+  background: white;
+  color: #5a4fcf;
+  border: none;
+  padding: 6px 14px;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* ===== POSTS ===== */
+.post-container {
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 0 10px;
+}
+
+.post-card {
+  background: white;
+  border-radius: 12px;
+  padding: 18px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+/* Author */
+.post-author {
+  font-size: 14px;
+  font-weight: bold;
+  color: #444;
+}
+
+/* Title */
+.post-title {
+  font-size: 22px;
+  margin: 6px 0;
+}
+
+/* Media — FULL WIDTH FIXED */
+.post-media {
+  width: 100%;
+  border-radius: 10px;
+  margin-top: 10px;
+  display: block;
+  object-fit: cover;
+}
+
+/* Content */
+.post-content {
+  font-size: 15px;
+  margin-top: 8px;
+}
+
+/* ===== COMMENTS ===== */
+.comment-section {
+  margin-top: 12px;
+  padding-top: 10px;
+  border-top: 1px solid #eee;
+}
+
+.comment-line {
+  font-size: 14px;
+  margin: 3px 0;
+}
+
+.comment-user {
+  font-weight: bold;
+  color: #555;
+}
+
+.comment-text {
+  color: #222;
+}
+
+/* Input Row */
+.comment-input-row {
+  display: flex;
+  margin-top: 8px;
+  gap: 8px;
+}
+
+.comment-input-row input {
+  flex: 1;
+  padding: 6px 10px;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+.comment-input-row button {
+  padding: 6px 14px;
+  border-radius: 20px;
+  border: none;
+  background: #667eea;
+  color: white;
+  cursor: pointer;
+}
+
+/* ===== ACTION BUTTONS ===== */
+.action-row {
+  margin-top: 12px;
+  display: flex;
+  gap: 10px;
+}
+
+.edit-btn {
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: white;
+  padding: 6px 14px;
+  border-radius: 6px;
+  border: none;
+  font-size: 13px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.delete-btn {
+  background: linear-gradient(135deg, #ff4b4b, #ff1f1f);
+  color: white;
+  padding: 6px 14px;
+  border-radius: 6px;
+  border: none;
+  font-size: 13px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* ===== EDIT MODAL ===== */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.45);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-card {
+  background: white;
+  padding: 22px;
+  border-radius: 10px;
+  width: 400px;
+}
+
+.modal-card input,
+.modal-card textarea {
+  width: 100%;
+  margin: 8px 0;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
